@@ -6,7 +6,7 @@ import { makeStyles } from "@mui/styles";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 import people from "../data/data";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
 const useStyles = makeStyles({
   image: {},
@@ -63,7 +63,6 @@ const Review = () => {
           prev={() => {
             prevPerson();
           }}
-          
         >
           <Container>
             <Box
@@ -117,23 +116,23 @@ const Review = () => {
             </Box>
 
             <Typography
+              color="#ba5d2c "
               sx={{ display: "flex", justifyContent: "center", p: 1 }}
-              variant="h4"
+              variant="h5"
             >
               {name}
             </Typography>
             <Typography
-              variant="h5"
+              variant="h6"
               sx={{
                 display: "flex",
                 justifyContent: "center",
-                p: 1,
-                color: "blueviolet",
               }}
             >
               {job}
             </Typography>
             <Typography
+              color="#617d98"
               paragraph
               sx={{
                 display: "flex",
