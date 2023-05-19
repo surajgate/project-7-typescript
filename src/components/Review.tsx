@@ -1,16 +1,12 @@
-import {
-  Box,
-  Button,
-  CardMedia,
-  Container,
-  Typography,
-} from "@mui/material";
-import Carousel from 'react-material-ui-carousel'
+import { Box, Button, CardMedia, Container, Typography } from "@mui/material";
+import Carousel from "react-material-ui-carousel";
 import { useState } from "react";
 
 import { makeStyles } from "@mui/styles";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 import people from "../data/data";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 const useStyles = makeStyles({
   image: {},
@@ -56,6 +52,8 @@ const Review = () => {
     <>
       <Container sx={{ position: "relative" }}>
         <Carousel
+          NextIcon={<ArrowForwardIosIcon />}
+          PrevIcon={<ArrowBackIosNewIcon />}
           autoPlay
           stopAutoPlayOnHover
           interval={2000}
@@ -65,6 +63,7 @@ const Review = () => {
           prev={() => {
             prevPerson();
           }}
+          
         >
           <Container>
             <Box
@@ -154,7 +153,7 @@ const Review = () => {
                 <FaChevronRight />
               </Button>
             </Box> */}
-            <Box sx={{ display: "flex", justifyContent: "center", m: 2 }}>
+            {/* <Box sx={{ display: "flex", justifyContent: "center", m: 2 }}>
               <Button
                 sx={{ display: "flex", justifyContent: "center" }}
                 variant="outlined"
@@ -162,7 +161,7 @@ const Review = () => {
               >
                 Surprise Me
               </Button>
-            </Box>
+            </Box> */}
           </Container>
         </Carousel>
       </Container>

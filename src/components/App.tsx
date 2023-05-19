@@ -17,24 +17,27 @@ function App() {
 
   return (
     <>
-      <Container sx={{ width: "40rem" }}>
-        <Card sx={{ m: 2, p: 2 }}>
-          <Box>
-            <Typography
-              variant="h2"
-              sx={{ display: "flex", justifyContent: "center", m: 0.5 }}
-            >
-              Our Reviews
-            </Typography>
-          </Box>
-          <Container
+      <Container>
+        <Box sx={{ m: 4 }}>
+          <Typography
+          fontSize={40}
+          letterSpacing={2}
+            color={"#324d67"}
+            variant="h2"
+            sx={{ display: "flex", justifyContent: "center", m: 0.5 }}
+          >
+            Reviews
+          </Typography>
+        </Box>
+        {/* <Card sx={{ m: 2, p: 2 }}> */}
+        {/* <Container
             sx={{ width: "10%" }}
             className={classes.underline}
-          ></Container>
-          <Box>
-            <Review />
-          </Box>
-        </Card>
+          ></Container> */}
+        <Box>
+          <Review />
+        </Box>
+        {/* </Card> */}
       </Container>
     </>
     // <main>
